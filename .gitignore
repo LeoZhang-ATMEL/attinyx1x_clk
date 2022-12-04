@@ -1,0 +1,78 @@
+# From original gitignore 
+
+#############
+## Allegro
+#############
+
+# Ignore log file
+**/*.log*
+**/*.dml*
+**/*.lst*
+
+#ignore 记录操作allegro的事件
+**/*.jrl*
+**/*.tag
+
+#报告文件
+**/*.rpt*
+
+#报告文件
+**/*.cfg*
+**/*.lck*
+
+#报表
+**/*.txt*
+
+#数据除外
+!place_txt.txt
+
+#DXF導入文件
+**/*.cnv*
+
+#Gerber param file除外
+**/!art_param.txt
+
+#Folder
+#过滤整个文件夹
+**/signoise.run/ 
+
+#############
+## OrCAD
+#############
+**/*.dbk
+!**/*.opj
+**/*.DRC
+**/*.DSNlck
+
+#ignore netlist
+**/allegro/ 
+
+#############
+## Altium Designer
+#############
+
+**/*.PrjPCBStructure
+**/__Previews/*.*
+**/History/*.zip
+
+# Filter Software project
+
+*.o
+*.elf
+*.map
+*.d
+**/nbproject/private
+**/nbproject/Makefile-*
+**/nbproject/Package-*
+**/nbproject/project.properties
+**/*.X/debug
+**/*.X/dist
+**/*.X/build
+**/*.X/.generated_files
+**/*.IAR/Debug
+**/*.IAR/settings
+**/*.IAR/*.dep
+**/*.IAR/*.custom_argvars
+**/*.KEIL/Objects
+**/*.KEIL/*.uvguix.*
+Gemfile*
