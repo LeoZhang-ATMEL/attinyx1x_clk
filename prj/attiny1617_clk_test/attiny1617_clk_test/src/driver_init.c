@@ -96,6 +96,7 @@ void system_init()
 
 	LED2_set_dir(PORT_DIR_OUT);
 
+#if 0
 	/* PORT setting on PB5 */
 
 	// Set pin direction to output
@@ -108,7 +109,7 @@ void system_init()
 	    false);
 
 	LED3_set_dir(PORT_DIR_OUT);
-
+#endif
 
 	CPUINT_init();
 
